@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-validate</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <img src="img/Emaillogo.svg" alt="email svg">
+               <nobr>e-validate</nobr>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="frontpage">
+        <div class="block">
+            <marquee scrollamount="15" >Welcome to e-validate</marquee>
+            <h1>Email Validator</h1>
+            <h3>This tool will verify your email address and its validity and will confirm that your entered email exists or not</h3>
+        </div>
+        <main  id="home">
+        <div id="background">
+        <div class="container">
+            <center>
+            <h3>Enter Email to validate:</h3>
+            </center>
+            <form action="/submit" method="post">
+                <!-- Input Filed to Validate Email Address --> 
+                <input placeholder="tonystark@example.com" type="text" id="username" name="username" required>
+                <br><br>
+                <!-- Submit button -->
+                <input id="submition" class="btn" type="submit" value="Submit">
+                <button id="inputClear" class="btn" onclick="clearfield()">Clear</button>        
+            </form>
+        </div>
+        
+        <div class="container">
+            <h2> Results:</h2>
+            <div id="resultCont">
+                Your results will be shown here
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="secondpage" id="secondpage">
+        <div id="developedby" class="developedby">
+           <h3>Developed By</h3>
+           <br><br>
+           <p>
+            ~ Nayan Baghel <br>
+            ~ Abhay Pande <br>
+            ~ Aditya Sukhdeve <br>
+            ~ Md Abubakar <br>
+           </p>
+        </div>
+        <div id="about" class="about">
+            <h3>About</h3>
+            <br><br>
+        <p>Welcome to E-Validate.com, our mission is to provide reliable and efficient email validation services. We help to verify email addresses in real-time, identifying invalid, fake, or inactive email addresses to improve deliverability rates and maximize the effectiveness of email marketing efforts.
+        E-Validate.com is committed to delivering accurate results with lightning-fast speed. You can trust us to ensure the integrity of your email lists, saving you time, resources, and potential reputation damage.
+        Let us help you enhance your email marketing campaigns and drive better results.</p></div>
+        <div id="contact" class="contact">
+            <h3>Contact Us</h3>
+            <br><br>
+            <p>Mail us: emailvalidatorforyou@gmail.com
+               Contact Us: +91 7620668974
+            </p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        Copyright | e-validate.com | All Rights reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

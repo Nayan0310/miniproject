@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(3, 4, 4);
+    color: white;
+    padding: 19px 12px;
+}
+
+nav nobr{
+    padding: 0 8px;
+    font-style: none;
+    color: bisque;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li> a:hover{
+    color: rgb(192, 189, 205);
+}
+
+
+
+.block{
+    padding: none;
+    color: black;
+    text-align: center;
+    border: 20px;
+    border-color: black;
+    background-color: rgb(197, 201, 219);
+}
+    
+
+.block marquee{
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.block h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+#home{
+    padding-top: 0px;
+    min-height: 100vh; 
+}
+
+.logo img{
+    width: 25px;
+    filter: invert(1);
+}
+
+.logo span{
+    padding: 10px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container{ 
+    background: rgba(0, 0, 0, 0.995);
+    color: azure;
+    border: 3px solid;
+    max-width: 80vw;
+    margin: 24px;
+    margin-left: 120px;
+    padding: 9px 15px;
+    padding-left: 12px;
+}
+
+#username{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.container h3, form{
+    padding: 6px 34%;
+    text-align: left;
+}
+
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    font-size: 10px;
+}
+
+.btn{
+    background: white;
+    color: black;
+    padding: 9px 18px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+.secondpage{
+    background-color: rgb(197, 201, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+
+#secondpage div {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 370px;
+    width: 335px;
+    background: black;
+    font-style: italic;
+    margin: 60px;
+    color: azure;
+    padding: 20px;
+    
+}
+
+#secondpage h3 {
+    text-align: center;
+}
+
+#secondpage p{
+    font-size: 14px;
+}
+
+#developedby p {
+    margin-left: 100px;
+    text-align: justify;
+    color: bisque;
+    
+}
+
+#about p{
+    text-align: justify;
+}
+#contact p{
+    margin-left: 20px;
+    color:bisque;
+}
+
+footer{
+    font-size: 12px;
+    background-color:  black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        font-size: 12px; 
+    }
+
+    input[type='text'] {
+        width: 100%; 
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 155px;
+        filter: invert(1);
+    }
+  }
